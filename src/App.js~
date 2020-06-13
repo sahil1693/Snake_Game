@@ -20,7 +20,7 @@ const initialState = {
   ]
 }
 
-export default class App extends Component {
+class App extends Component {
 
   state = initialState;
 
