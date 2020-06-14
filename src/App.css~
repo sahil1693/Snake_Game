@@ -4,12 +4,42 @@
   background-image: url('./background.jpg');
   background-size: cover;
 }
+.game-title{
+	position: absolute;
+	font-size:34px;
+	font-family: arial-black;
+	background-color: white;
+	
+}
 .game-area{
 	position: absolute;
-	height:500px;
-	width:500px;
-	border: 2px solid;
-	margin:60px 350px;
+	height:60vh;
+	width:40vw;
+	
+	margin:6vh 35vw;
+   box-shadow: 4px 4px 4px 4px rgba(0,0,255,1);
+   transition: 0.3s;
+   background-image: linear-gradient(0,blue,white,blue);
+}
+.restart{
+	position:absolute;
+	margin: 70vh 0vw 0vw 50vw;
+}
+.restart:hover, .pause:hover, .start:hover{
+	 box-shadow: 1px 1px 1px 1px rgba(0,0,1,1);
+   transition: 0.1s;
+}
+
+.pause{
+	position:absolute;
+	margin:70vh 0vw 0vw 60vw;
+}
+.start{
+	position: absolute;
+	margin:70vh 0vw 0vw 55vw;
+}
+.game-area:hover{
+	box-shadow: 6px 6px 6px 6px rgba(0,0,255,1);
 }
 .snake-dot{
 	position:absolute;
@@ -22,6 +52,6 @@
 	position:absolute;
 	height:2%;
    width: 2%;
-   background-color: #red;
+   background-color: red;
    border:1px solid #fff;
 }
